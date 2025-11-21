@@ -20,7 +20,7 @@ Este projeto foi desenvolvido por:
 | :--- | :--- |
 | **Simulação Online (Wokwi)** | [Acessar Projeto no Wokwi](https://wokwi.com/projects/448238750741426177) |
 | **Vídeo: Plataforma Mobile** | [Assistir no YouTube](https://youtu.be/Np-I8Djucbk) |
-| **Vídeo: Solução IoT** | [INSIRA_SEU_LINK_DO_YOUTUBE_AQUI] |
+| **Vídeo: Solução IoT - Demonstração no Wokwi** | [Assistir no Youtube](https://youtu.be/qWvAJ8RYMKw) |
 
 ---
 
@@ -31,6 +31,30 @@ A plataforma **SkillBridge** (App Mobile) oferece trilhas de aprendizado para *u
 A solução **SkillBridge IoT** é um dispositivo físico de mesa que auxilia o estudante a aplicar a técnica **Pomodoro** (ciclos de foco e pausa) longe das distrações do celular.
 
 **O diferencial:** O dispositivo não é isolado. Ao finalizar um ciclo de estudo com sucesso, ele conecta-se via Wi-Fi e envia os dados da sessão (tempo, data e status) diretamente para o banco de dados da SkillBridge (Firebase), permitindo que o app mobile gere estatísticas de produtividade para o aluno.
+
+## 🍅 O Método Pomodoro
+
+O projeto baseia-se na **Técnica Pomodoro**, um método de gerenciamento de tempo desenvolvido por Francesco Cirillo no final dos anos 1980. A técnica utiliza um cronômetro para dividir o trabalho em intervalos, tradicionalmente de 25 minutos, separados por curtos intervalos de descanso.
+
+**Como funciona o ciclo padrão:**
+1.  Escolha uma tarefa (Ex: "Estudar Python").
+2.  Ajuste o timer para 25 minutos (**Pomodoro**).
+3.  Trabalhe na tarefa até o timer tocar.
+4.  Faça uma pausa curta (5 minutos).
+5.  A cada 4 "Pomodoros", faça uma pausa mais longa (15-30 minutos).
+
+O objetivo é usar o timer como um aliado para aumentar a produtividade e a agilidade mental, evitando o burnout e mantendo o cérebro descansado.
+
+### ⚠️ Nota Importante: Modo de Demonstração
+
+Para fins acadêmicos e de validação rápida deste protótipo (Global Solution), a escala de tempo no firmware do ESP32 foi alterada:
+
+* **Tempo de Foco:** Reduzido de 25 minutos para **25 segundos**.
+* **Tempo de Pausa:** Reduzido de 5 minutos para **5 segundos**.
+
+Esta configuração permite que a banca avaliadora visualize o **ciclo completo**, a transição de estados (LEDs/Buzzer) e o envio automático de dados para a nuvem sem a necessidade de aguardar o tempo real. 
+
+> *Para uso real em produção, basta ajustar as constantes `DURACAO_TRABALHO` e `DURACAO_PAUSA` no código fonte para `25 * 60` e `5 * 60`, respectivamente.*
 
 ---
 
