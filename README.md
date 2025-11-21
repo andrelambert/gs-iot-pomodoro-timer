@@ -100,6 +100,7 @@ Exemplo do payload gerado pelo ESP32 usando a biblioteca `ArduinoJson`:
     "createdAt": { "timestampValue": "2025-10-25T14:30:00Z" }
   }
 }
+```
 
 ## 💻 Lógica do Sistema (Máquina de Estados)
 
